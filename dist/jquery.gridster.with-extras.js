@@ -1,6 +1,6 @@
-/*! gridster.js - v0.5.6 - 2014-09-25
+/*! gridster.js - v0.5.6 - 2017-04-14
 * http://gridster.net/
-* Copyright (c) 2014 ducksboard; Licensed MIT */
+* Copyright (c) 2017 ducksboard; Licensed MIT */
 
 ;(function(root, factory) {
 
@@ -3791,7 +3791,7 @@
             this.gridmap[col] = [];
         }
 
-        this.gridmap[col][row] = false;
+        this.gridmap[col][row] = this.gridmap[col][row] || false;
         this.faux_grid.push(coords);
 
         return this;

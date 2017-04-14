@@ -2944,7 +2944,7 @@
             this.gridmap[col] = [];
         }
 
-        this.gridmap[col][row] = false;
+        this.gridmap[col][row] = this.gridmap[col][row] || false;
         this.faux_grid.push(coords);
 
         return this;
